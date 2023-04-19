@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/html5reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Zach Milan</title>
+</head>
+<body>
+<div id="indexBody">
+    <header>
+        <a class="skip-link" href="#main">Skip to content</a>
+        <nav>
+            <a href="./career.html">Career</a>
+            <a href="./index.html" aria-current="page" class="active">Home</a>
+            <a href="./personal.html">Personal</a>
+        </nav>
+        <br><br>
+        <h1>Welcome to my homepage! I'm excited to show you around.</h1> 
+        <br><br>     
+    </header>
+
+    <main id="main">
+        <p class="mainPar">My name is Zach and you are looking at my portfolio page. I am currently a Junior at UM Ann Arbor. Feel free to check out my <a href="https://www.linkedin.com/in/zachary-milan/" target="_blank">LinkedIn</a>. Also, before you check out my site - click the following button to activate a cool (yet cheesy) scrolling background: <button id="butt" tabindex="0">Toggle background</button></p> <br><br>
+
+        <div class="me" id="meImage" >
+            <img id="you" src="./pImages/YOU.jpeg" alt="Pointing at the user.">
+        </div>
+
+    </main>
+    <br><br>
+
+<footer class="indexFoot">&copy Copyright 2023 Zachary Milan</footer>
+</div>
+</body>
+</html>
+
+<script>
+    document.getElementById('butt').addEventListener('click', function () {
+        if (document.getElementById('meImage').style.backgroundImage === "none") {
+            document.getElementById('meImage').style.backgroundImage = "url('./ranImages/hopeyouenjoy.jpg')";
+            document.getElementById('meImage').style.backgroundRepeat = "repeat-x";
+            document.getElementById('meImage').style.backgroundPosition = "left bottom";
+            document.getElementById('meImage').style.animation = "slide 5s linear infinite";
+
+        } else {
+            document.getElementById('meImage').style.backgroundImage = "none";
+
+
+        }
+
+    })
+</script>
